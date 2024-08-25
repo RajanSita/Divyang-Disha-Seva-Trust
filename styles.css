@@ -1,0 +1,622 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Light Grey background */
+    color: #333; /* Dark Grey text color */
+}
+
+/* Add some spacing and style to improve readability */
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-bottom: 15px;
+}
+
+/* Set a max-width to keep content readable on larger screens */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Dark Blue-Grey */
+    color: #ecf0f1; /* Light Grey */
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #3498db; /* Blue */
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1; /* Light Grey */
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db; /* Blue - Change color on hover */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the mission section */
+#mission {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.mission-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mission-description {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.mission-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.mission-button:hover {
+    background-color: #555;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .mission-text {
+        padding: 0 20px;
+    }
+}
+
+
+/* Style the impact section */
+#impact {
+    padding: 40px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    flex-basis: calc(30% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+
+/* Style the call to action section */
+#action {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.call-to-action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107; /* Default button color */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffca28; /* Button color on hover */
+}
+
+
+/* Style the get involved section */
+#get-involved {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px;
+    text-align: center;
+}
+
+#get-involved p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#get-involved ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#get-involved li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#get-involved a.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#get-involved a.button:hover {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+
+
+/* Style the donate section */
+#donate {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.donation-option {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.donation-option:hover {
+    transform: scale(1.05);
+}
+
+.donation-amount {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.donation-description {
+    color: #666;
+}
+
+.donation-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .donation-option {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .donation-option {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+
+/* Style the volunteer section */
+#volunteer {
+    background-color: #f9f9f9;
+    
+    padding: 40px;
+    text-align: center;
+}
+
+.volunteer-opportunities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.volunteer-opportunity {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.volunteer-opportunity:hover {
+    transform: scale(1.05);
+}
+
+.opportunity-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.opportunity-description {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.volunteer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .volunteer-opportunity {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .volunteer-opportunity {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+
+/* Style the about section */
+#about {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-image {
+    flex-basis: calc(30% - 20px);
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-text {
+    flex-basis: calc(60% - 20px);
+    text-align: left;
+}
+
+.about-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-text {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+
+/* Style the gallery section */
+#gallery {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    flex-basis: calc(25% - 20px);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item::before {
+    content: '';
+    display: block;
+    padding-top: 100%; /* Maintain aspect ratio for the pseudo-element */
+}
+
+.gallery-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+}
+
+/* Add more styles for the caption as needed */
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .gallery-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-item {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+
+/* Style the programs section */
+#programs {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Style the resources section */
+#resources {
+    padding: 20px;
+}
+
+.resource-category {
+    margin-bottom: 20px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Style the contact section */
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive design - adjust as needed */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
